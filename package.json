@@ -1,0 +1,36 @@
+{
+  "name": "git-status",
+  "description": "A git-status wrapper.",
+  "keywords": [
+    "git",
+    "status",
+    "a",
+    "wrapper"
+  ],
+  "license": "MIT",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/IonicaBizau/git-status.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/git-status/issues"
+  },
+  "homepage": "https://github.com/IonicaBizau/git-status#readme"
+}
