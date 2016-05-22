@@ -32,5 +32,10 @@
   "bugs": {
     "url": "https://github.com/IonicaBizau/git-status/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/git-status#readme"
+  "homepage": "https://github.com/IonicaBizau/git-status#readme",
+  "dependencies": {
+    "oargv": "^3.4.2",
+    "parse-git-status": "^0.1.0",
+    "spawno": "^1.0.1"
+  }
 }

@@ -2,4 +2,6 @@
 
 const gitStatus = require("../lib");
 
-console.log(gitStatus());
+gitStatus((err, data) => {
+    console.log(err || data);
+});
