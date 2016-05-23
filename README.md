@@ -27,6 +27,7 @@ gitStatus((err, data) => {
 
 ## :memo: Documentation
 
+
 ### `gitStatus(options, cb)`
 A git-status wrapper.
 
