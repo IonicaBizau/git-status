@@ -21,20 +21,20 @@ const gitStatus = require("git-status");
 
 gitStatus((err, data) => {
     console.log(err || data);
+    // => [ { x: ' ', y: 'M', to: 'example/index.js', from: null } ]
 });
 ```
 
 ## :memo: Documentation
 
-### `gitStatus(a, b)`
+### `gitStatus(options, cb)`
 A git-status wrapper.
 
-#### Params
-- **Number** `a`: Param descrpition.
-- **Number** `b`: Param descrpition.
+[`parse-git-status`](https://github.com/jamestalmage/parse-git-status) is used to parse the output.
 
-#### Return
-- **Number** Return description.
+#### Params
+- **Object** `options`: The `spawno` options.
+- **Function** `cb`: The callback function.
 
 
 
