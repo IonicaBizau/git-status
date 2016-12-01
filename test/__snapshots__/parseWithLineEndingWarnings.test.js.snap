@@ -1,0 +1,45 @@
+exports[`test should parse result if only line error warnings found 1`] = `
+Array [
+  Object {
+    "from": null,
+    "to": "example/index.js",
+    "x": " ",
+    "y": "M",
+  },
+  Object {
+    "from": null,
+    "to": " lib/index.js",
+    "x": " ",
+    "y": " ",
+  },
+  Object {
+    "from": null,
+    "to": " package.json",
+    "x": " ",
+    "y": " ",
+  },
+  Object {
+    "from": null,
+    "to": " .idea/",
+    "x": " ",
+    "y": "?",
+  },
+]
+`;
+
+exports[`test should provide error if not only line error warnings found 1`] = `
+[Error: warning: LF will be replaced by CRLF in path/to/x/y.z
+The file will have its original line endings in your working directory.
+Oh snap!]
+`;
+
+exports[`test should return unchanged result if no error 1`] = `
+Array [
+  Object {
+    "from": "",
+    "to": "",
+    "x": "",
+    "y": "",
+  },
+]
+`;

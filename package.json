@@ -11,9 +11,15 @@
   "version": "1.0.3",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "contributors": [
+    "Sergey Zarouski <sergey@webuniverse.io> (http://webuniverse.io)"
+  ],
   "files": [
     "bin/",
     "app/",
@@ -39,5 +45,8 @@
     "oargv": "^3.4.2",
     "parse-git-status": "^0.1.0",
     "spawno": "^1.0.1"
+  },
+  "devDependencies": {
+    "jest": "^17.0.3"
   }
 }

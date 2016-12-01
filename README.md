@@ -23,6 +23,12 @@ gitStatus((err, data) => {
     console.log(err || data);
     // => [ { x: ' ', y: 'M', to: 'example/index.js', from: null } ]
 });
+
+//in order to bypass LF to CRLF warnings use a wrapper
+gitStatus(gitStatus.parseWithLineEndingWarnings((err, data) => {
+    console.log('parseWithLineEndingWarnings\n', err || data);
+    // => [ { x: ' ', y: 'M', to: 'example/index.js', from: null } ]
+}));
 ```
 
 ## :memo: Documentation
