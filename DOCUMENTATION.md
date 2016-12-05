@@ -11,3 +11,9 @@ A git-status wrapper.
 - **Object** `options`: The `spawno` options.
 - **Function** `cb`: The callback function.
 
+### `parseWithLineEndingWarnings(cb)`
+Ignores LF to CRLF warnings and gives parsed status info
+
+#### Params
+- **** `cb`: {Function}
+

@@ -20,11 +20,10 @@ $ npm i --save git-status
 const gitStatus = require("git-status");
 
 gitStatus((err, data) => {
-    console.log(err || data);
+    console.log('gitStatus\n', err || data);
     // => [ { x: ' ', y: 'M', to: 'example/index.js', from: null } ]
 });
 
-//in order to bypass LF to CRLF warnings use a wrapper
 gitStatus(gitStatus.parseWithLineEndingWarnings((err, data) => {
     console.log('parseWithLineEndingWarnings\n', err || data);
     // => [ { x: ' ', y: 'M', to: 'example/index.js', from: null } ]
@@ -42,6 +41,12 @@ A git-status wrapper.
 #### Params
 - **Object** `options`: The `spawno` options.
 - **Function** `cb`: The callback function.
+
+### `parseWithLineEndingWarnings(cb)`
+Ignores LF to CRLF warnings and gives parsed status info
+
+#### Params
+- **** `cb`: {Function}
 
 
 
