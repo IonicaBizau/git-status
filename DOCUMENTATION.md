@@ -8,6 +8,7 @@ A git-status wrapper.
 [`parse-git-status`](https://github.com/jamestalmage/parse-git-status) is used to parse the output.
 
 #### Params
+
 - **Object** `options`: The `spawno` options.
 - **Function** `cb`: The callback function.
 
@@ -15,5 +16,6 @@ A git-status wrapper.
 Ignores LF to CRLF warnings and gives parsed status info
 
 #### Params
+
 - **** `cb`: {Function}
 
